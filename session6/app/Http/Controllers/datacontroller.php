@@ -38,8 +38,8 @@ class datacontroller extends Controller
         App::setLocale($lang);
         return view('regis');
     }
-
-    public function update_book($id){
+    
+    public function updateBook($id){
         $data = Book::find($id);
         return view();
     }
